@@ -12,18 +12,30 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./imagenes/vale_logo.png"
+      href="./imagenes/woman-technologist.png"
     />
     <link rel="stylesheet" href="style.css">
+    
 
     <title>Valeria Hidalgo C</title>
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar"class="navbar">
         <h3 class="logo">&lt vale_hc &sol;&gt</h3>
+        <ul class="nav-menu">
+            <li class="nav-item"><a href="#home" class="nav-link">HOME</a></li>
+            <li class="nav-item"><a href="#aboutme" class="nav-link">ABOUT ME</a></li>
+            <li class="nav-item"><a href="#projects" class="nav-link">PROJECTS</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
+        </ul>
+        <div class="hamburguer">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
-    <div class="grid">
+    <div id="home" class="grid">
         <div class="hero">
             <div class="hero_text">
                 <h1> Hi my name is <span class="name_color"> Valeria Hidalgo C.</span>
@@ -35,7 +47,7 @@
     </div>
     
     <div class="title_box">
-        <h1 class="title">ABOUT ME</h1>
+        <h1 id="aboutme" class="title">ABOUT ME</h1>
     </div>
     <div class="grid">
         <div class="about_me ">
@@ -50,7 +62,7 @@
         </div>
     </div>
     <div class="title_box">
-        <h1 class="title">PROJECTS</h1>
+        <h1 id="projects"class="title">PROJECTS</h1>
     </div>
 
     <div class="grid">
@@ -113,7 +125,7 @@
         </div>
     </div>
     <div class="title_box">
-        <h1 class="title">CONTACT</h1>
+        <h1 id="contact" class="title">CONTACT</h1>
     </div>
 
     <div class="grid">
@@ -134,7 +146,7 @@
     </div>
 
     <p class="coded_by">Coded with &#9825; by Valeria Hidalgo C</p>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
