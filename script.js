@@ -14,8 +14,8 @@ document.querySelectorAll(".nav-link").forEach((n) =>
 
   n.addEventListener("click", () => {
     hamburguer.classList.remove("active");
-    console.log("este")
     navMenu.classList.remove("active");
+    aplastoHamburguer= !aplastoHamburguer;
   })
 );
 

@@ -24,7 +24,7 @@ li{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0rem 1.5rem;
+  padding: 0rem 2.5rem;
   position: fixed; 
   background-color: white;
   box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.3);
@@ -67,6 +67,10 @@ li{
   background-image: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.developer
+{
+  color: #5b86e5;
 }
 /* ABOUT ME */
 .about_me,
@@ -112,16 +116,35 @@ li{
   width: 100%;
   height: 100%;
 }
+.project-description{
+  padding: 0.5em 0;
+  text-align:left ;
+}
 .project-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   padding: 2.5rem;
 }
-.button {
-  padding-top: 1rem;
+.web-code-button{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+
 }
+.button {
+  margin-top: 1.5rem;
+  padding: 0.3rem;
+  border: 0.5px solid black;
+
+
+}
+.link{
+  color: black;
+}
+
+
 /* CONTACT */
 .icon {
   width: 2.5rem;
@@ -142,19 +165,27 @@ li{
   color: white;
   padding: 1rem;
 }
-
-.link:hover {
+/*Hovers*/
+.git-link:hover,
+.button:hover,
+.nav-item:hover{
   background: linear-gradient(135deg, #36d1dc 0%, #5b86e5 100%);
-  background-repeat: no-repeat;
-  background-size: 100% 40%;
-  background-position: 0 125%;
-  transition: 0.2s ease-out;
+  background-size: 100%;
+  
 }
-.developer:hover,
-.title:hover,
-.logo:hover {
-  color: #5b86e5;
+.button:hover{
+  border: none;
 }
+
+.git-link:hover,
+.button:hover > .fa-github,
+.button:hover > .fa-globe,
+.button:hover > .link,
+.nav-item:hover> .nav-link{
+  color: white;
+}
+
+
 .project-img:hover {
   transform: scale(1.1);
 }
