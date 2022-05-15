@@ -68,9 +68,8 @@ li{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.developer
-{
-  color: #5b86e5;
+.underline{
+  text-decoration: underline;
 }
 /* ABOUT ME */
 .about_me,
@@ -90,7 +89,10 @@ li{
   gap: 0.7rem;
   align-items: center;
 }
-
+.developer
+{
+  color: #5b86e5;
+}
 /* PROJECTS */
 .title_box {
   background-color: #36d1dc;
